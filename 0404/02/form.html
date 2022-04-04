@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>나와 잘 맞는 회사는?</h1>
+        <p>가고 싶은 회사에 대한 호감도를 조사합니다. <br>아이고 의미 없다.</p>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend class="hidden">회사</legend>
+                <p>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</p>
+                <input type="radio" name="company" value="naver" id="naver">
+                <label for="naver">네</label><br>
+                <input type="radio" name="company" value="kakao" id="kakao">
+                <label for="kakao">카</label><br>
+                <input type="radio" name="company" value="line" id="line">
+                <label for="line">라</label><br>
+                <input type="radio" name="company" value="coupang" id="coupang">
+                <label for="coupang">쿠</label><br>
+                <input type="radio" name="company" value="jeju" id="jeju">
+                <label for="jeju">베</label><br>
+            </fieldset>
+            <fieldset>
+                <legend class="hidden">메신저</legend>
+                <p>친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.</p>
+                <input type="checkbox" name="Messenger" value="kakao" id="kakaotalk">
+                <label for="kakaotalk">카카오톡</label><br>
+                <input type="checkbox" name="Messenger" value="kakao" id="line">
+                <label for="line">라인</label><br>
+                <input type="checkbox" name="Messenger" value="insta" id="insta">
+                <label for="line">인스타그램 디엠</label><br>
+                <input type="checkbox" name="Messenger" value="nateon" id="nateon">
+                <label for="line">네이트온</label><br>
+                <input type="checkbox" name="Messenger" value="buddy" id="buddy">
+                <label for="line">버디버디</label><br>
+            </fieldset>
+            <fieldset>
+                <legend class="hidden">포부</legend>
+                <p>면접에서 자신의 포부를 한 문장으로 애기한다면?</p>
+                <input type="text" name="aspiration" id="aspiration" placeholder="내 답변">
+                <label class="hidden" for="aspiration"></label>
+            </fieldset>
+            <fieldset>
+                <legend class="hidden">질문</legend>
+                <p>다음 중 기술 면접때 듣고 싶은 질문이 아닌 것은?</p>
+                <select name="question" id="question">
+                    <option value="0">선택</option>
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="js">js</option>
+                    <option value="react">react</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend class="hidden"></legend>
+                <p>취업을 희망하는 날짜를 선택해주세요</p>
+                <label for="date">날짜</label><br>
+                <input type="date">
+            </fieldset>
+            <fieldset>
+                <legend class="hidden"></legend>
+                <p>업무를 시작 하기에 가장 적당한 시간을 고르세요</p>
+                <label for="date">시간</label><br>
+                <input type="time">
+            </fieldset>
+        </form>
+        <div class="button">
+            <button class="submit" type="submit">제출</button>
+            <button class="reset" type="reset">양식 지우기</button>
+        </div>
+            
+    </main>
+
+
+</body>
+</html>
+
