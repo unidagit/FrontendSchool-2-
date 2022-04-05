@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'LeferiBaseType-RegularA';
+    margin: 0;
+    padding: 0;
+    background-image: url(universe1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+header {
+    margin-top: 100px;
+    color: rgb(228, 198, 253);
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bolde;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+    background-color: transparent;
+    color: white;
+}
+
+caption {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+th, td {
+    border: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.calender_top {
+    margin: 40px ;
+}
+
+.calender_top .april {
+    margin-bottom: 50px;
+}
+
+.calender_bottom .june {
+    margin-bottom: 50px;
+}
