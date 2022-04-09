@@ -1,0 +1,267 @@
+/*setting*/
+:root {
+    --face: rgba(255, 202, 139, 1);
+    --black: rgba(34, 34, 34, 1);
+}
+
+
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.tiger {
+    position: relative;
+    top: 100px;
+    width: 360px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.tiger .ear {
+    position: absolute;
+    top: 100px;
+    width: 63px;
+    height: 74px;
+    border: 5px solid var(--black);
+    border-radius: 40% 40% 40% 60%;
+    background-color: var(--face);
+    z-index: 4;
+}
+
+.tiger .ear.left{
+    top: -15px;
+    left: 30px;
+    transform: rotate(130deg);
+
+}
+
+.tiger .ear.right{
+    top: -15px;
+    right: 70px;
+    transform: rotate(-130deg);
+}
+
+.tiger .face {
+    width: 316px;
+    height: 293px;
+    margin: 20px auto;
+    background-color: var(--face);
+    border: 5px solid var(--black);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+}
+
+.tiger .face .eye {
+    position: absolute;
+    top: 108px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--black);
+    z-index: 5;
+}
+
+.tiger .face .eye.left {
+    left: 122px;
+}
+
+.tiger .face .eye.right {
+    right: 122px;
+}
+
+.tiger .face .nose {
+    position: absolute;
+    top: 122px;
+    left: 144px;
+    width: 21px;
+    height: 17px;
+    background-color: var(--black);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.tiger .mouth {
+    position: absolute;
+    top: 122px;
+    width: 29px;
+    height: 29px;
+    border: 7px solid var(--black);
+    border-radius: 50%;
+}
+
+.tiger .face .mouth.left {
+    left: 152px;
+    background-color: var(--face);
+    z-index: 0;
+}
+
+.tiger .face .mouth.right {
+    right: 150px;
+    background-color: var(--face);
+    z-index: 0;
+}
+
+.tiger .face .mouth.left::before {
+    content: " ";
+    position: absolute;
+    top: -17px;
+    left: -8px;
+    width: 50px;
+    height: 22px;
+    background-color: var(--face);
+    z-index: 2;
+}
+
+.tiger .face .mouth.right::before {
+    content: " ";
+    position: absolute;
+    top: -17px;
+    left: -8px;
+    width: 50px;
+    height: 22px;
+    background-color: var(--face);
+    z-index: 2;
+}
+
+.tiger .face .toppattern1 {
+    position: absolute;
+    top: -2px;
+    left: 121px;
+    width: 20px;
+    height: 30px;
+    background-color: var(--black);
+    border-radius: 40% 2% 50% 70% ;
+    transform: rotate(10deg);
+}
+
+.tiger .face .toppattern2 {
+    position: absolute;
+    top: -2px;
+    left: 140px;
+    width: 30px;
+    height: 45px;
+    background-color: var(--black);
+    border-radius: 10% 10% 70% 80% ;
+}
+
+.tiger .face .toppattern3 {
+    position: absolute;
+    top: -2px;
+    right: 120px;
+    width: 20px;
+    height: 30px;
+    background-color: var(--black);
+    border-radius: 40% 30% 50% 70% ;
+    transform: scaleX(-1);
+    transform: rotate(-10deg);
+}
+
+.tiger .face .left_top_볼 {
+    position: absolute;
+    top: 150px;
+    left: 1px;
+    width: 50px;
+    height: 24px;
+    background-color: var(--black);
+    border-radius: 10% 40% 50% 10%;
+    transform: rotate(-15deg);
+}
+
+.tiger .face .left_bottom_볼 {
+    position: absolute;
+    top: 180px;
+    left: 7px;
+    width: 50px;
+    height: 24px;
+    background-color: var(--black);
+    border-radius: 1% 40% 50% 45%;
+    transform: rotate(-10deg);
+}
+
+
+.tiger .face .right_top_볼 {
+    position: absolute;
+    top: 150px;
+    right:1px;
+    width: 50px;
+    height: 24px;
+    background-color: var(--black);
+    border-radius: 40% 40% 20% 50%;
+    transform: rotate(12deg);
+
+}
+
+.tiger .face .right_bottom_볼 {
+    position: absolute;
+    top: 180px;
+    right: 9px;
+    width: 50px;
+    height: 24px;
+    background-color: var(--black);
+    border-radius: 40% 40% 30% 50%;
+    transform: rotate(15deg);
+}
+
+/*body*/
+.tiger .tigerbody {
+    position: absolute;
+    bottom: 150px;
+    right: 90px;
+    width: 220px;
+    height: 180px;
+    background-color: var(--face);
+    border: 5px solid var(--black);
+    border-radius: 40% 40% 20% 20%;
+    z-index: 0;
+}
+
+.tiger .tigerbody .center_body {
+    position: absolute;
+    width: 150px;
+    height: 110px;
+    top: 45px;
+    right: 30px;
+    border-radius: 50% 50% 20% 20%;
+    border: 5px solid var(--black);
+    background-color: rgb(253, 227, 198);
+}
+
+.tiger .arm.left {
+    position: absolute;
+    top: 290px;
+    left: -2px;
+    width: 100px;
+    height: 60px;
+    background-color: var(--face);
+    transform: rotate(-50deg);
+    border: 5px solid var(--black);
+    border-radius: 50% 15% 10% 50%;
+    z-index: 1;
+}
+
+.tiger .arm.right {
+    position: absolute;
+    top: 250px;
+    right: 33px;
+    width: 100px;
+    height: 60px;
+    background-color: var(--face);
+    transform: rotate(-230deg);
+    border: 5px solid var(--black);
+    border-radius: 50% 10% 10% 50%;
+    z-index: 5;
+}
