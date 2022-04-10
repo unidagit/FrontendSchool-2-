@@ -1,7 +1,7 @@
 /*setting*/
 :root {
     --face: rgba(255, 202, 139, 1);
-    --black: rgba(34, 34, 34, 1);
+    --black: rgb(0, 0, 0);
 }
 
 
@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(190, 27, 190);
+    background-image: linear-gradient(135deg, #0e0041 0%, #60003e 100%);
 }
 
 *,
@@ -62,6 +62,22 @@ body {
       height:400px
     } 
   }
+
+  @keyframes 회전{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+@keyframes 입 {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
 
 body {
     margin: 0;
@@ -149,6 +165,19 @@ body {
     background-color: var(--black);
     border-radius: 50%;
     z-index: 1;
+}
+
+.tiger .face .mouthbottom {
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    border: 7px solid var(--black);
+    border-radius: 50%;
+    top: 125px;
+    left: 142px;
+    z-index: -1;
+    background: #c94f53;
+    animation: 입 1.2s infinite alternate;
 }
 
 .tiger .mouth {
@@ -277,7 +306,7 @@ body {
 .tiger .tigerbody {
     position: absolute;
     bottom: 150px;
-    right: 90px;
+    right: 78px;
     width: 220px;
     height: 180px;
     background-color: var(--face);
@@ -290,7 +319,7 @@ body {
     width: 130px;
     height: 100px;
     top: 50px;
-    right: 40px;
+    right: 42px;
     border-radius: 20% 20% 50% 50%;
     border: 5px solid var(--black);
     background-color: rgb(253, 227, 198);
@@ -299,7 +328,7 @@ body {
 .tiger .arm.left {
     position: absolute;
     top: 290px;
-    left: -2px;
+    left: 3px;
     width: 100px;
     height: 60px;
     background-color: var(--face);
@@ -312,7 +341,7 @@ body {
 .tiger .arm.right {
     position: absolute;
     top: 258px;
-    right: 20px;
+    right: 18px;
     width: 100px;
     height: 60px;
     background-color: var(--face);
@@ -320,7 +349,15 @@ body {
     border-radius: 10% 50% 50% 10%;
     z-index: 1;
     transform: rotate(80deg);
-    animation: 손오른쪽 0.5s infinite alternate;
+    animation: 손오른쪽 0.4s infinite alternate;
+}
+
+.tiger .arm.right .flag {
+    position: absolute;
+    top: -30px;
+    left: 95px;
+    width: 170px;
+    transform: rotate(50deg);
 }
 
 .tiger .arm.left::before {
@@ -344,10 +381,34 @@ body {
     background-color: var(--face);
 }
 
+.tiger .hand.left1 {
+    position: absolute;
+    top: 340px;
+    left: 15px;
+    width: 15px;
+    height: 7px;
+    background-color: var(--black);
+    border-radius: 50% 50% 20% 50%;
+    transform: rotate(-50deg);
+    z-index: 8;
+}
+
+.tiger .hand.left2 {
+    position: absolute;
+    top: 349px;
+    left: 25px;
+    width: 15px;
+    height: 7px;
+    background-color: var(--black);
+    border-radius: 50% 50% 20% 50%;
+    transform: rotate(-50deg);
+    z-index: 8;
+}
+
 .tiger .leg.right {
     position: absolute;
     bottom: 120px;
-    left: 50px;
+    left: 62px;
     width: 70px;
     height: 50px;
     background-color: var(--face);
@@ -359,7 +420,7 @@ body {
 .tiger .leg.left {
     position: absolute;
     bottom: 120px;
-    right: 90px;
+    right: 78px;
     width: 70px;
     height: 50px;
     background-color: var(--face);
@@ -372,7 +433,7 @@ body {
     content: " ";
     position: absolute;
     bottom: 30px;
-    width: 211px;
+    width: 21px;
     height: 20px;
     background-color: var(--face);
 }
@@ -393,23 +454,28 @@ body {
     left: 40px;  
     width: 280px;
     height: 55px;
-    background-color: rgb(5, 5, 5);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border: 5px solid var(--black);
     border-radius: 90%;
 }
 
 .box {
     width: 278px;
-    height: 500px;
+    height: 600px;
     margin: -80px auto;
     border: 5px solid var(--black);
+    border-radius: 0% 0% 50% 50%;
     display: flex;
-    background-color: teal;
-    justify-content: center;
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
 }
 
-.backball {
-    top: 20px;
-    width: 500px;
-    height: 500px;
-    display: flex;
+.moon {
+    position: absolute;
+    top: 5px;
+    width: 650px;
+    margin: 1% 50%;
+    animation: 회전 30s linear infinite;
+    transform-origin: 50% 50%;
 }
+
+
