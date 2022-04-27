@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'LeferiBaseType-RegularA';
+}
+
+body, p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 360px;
+    padding: 10px 10px;
+    outline: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(image/universe1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.title h1 {
+    font-size: 32px;
+    color: rgb(36, 36, 36);
+    margin: 0 0 10 0px;
+}
+
+.title h2 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 40px 0;
+    color: rgb(36, 36, 36);
+}
+
+.inputid {
+    margin-bottom: 20px;
+}
+
+.label_id, .label_pw {
+    font-size: 14px;
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+}
+
+.label_id p, .label_pw p {
+    margin-bottom: 4px;
+}
+
+.inputcheck {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label_saveid {
+    display: flex;
+}
+
+.inputcheck .label_saveid #saveid {
+    width: 20px;
+    padding: 0px;
+    margin: 8px 2px 5px -3px;
+}
+
+.inputcheck .label_saveid p {
+    font-size: 12px;
+    margin-top: 9px;
+}
+
+.inputcheck .idjoin .join {
+    display: block;
+    font-size: 12px;
+    margin-top: 9px;
+}
+
+.login {
+    margin-top: 30px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #184597;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.login:hover {
+    color: white;
+    opacity: 1;
+}
+
+.lionpage {
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+
+
